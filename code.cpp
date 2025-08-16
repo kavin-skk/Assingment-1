@@ -15,9 +15,9 @@ int main() {
         cout << "Source file does not exist. Creating source file...\n";
         ofstream createSrc(source);
         if (!createSrc) {
-            cout << "ERROR: Could not create source file.\n";
+            cout << "ERROR: Could not create source file. \n";
             return 1;
-        }
+        } 
         // write record
         createSrc << "id,name,email\n";
         createSrc << "1,John Doe,john@example.com\n";
